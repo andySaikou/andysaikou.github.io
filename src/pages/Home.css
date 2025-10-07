@@ -1,6 +1,7 @@
 .home-container {
+    box-sizing: border-box;
     text-align: center;
-    padding: 20px;
+    padding: 80px;
 }
 
 .top-right-buttons {

@@ -1,10 +1,27 @@
 import ProjectBanner from "./ProjectBanner.jsx";
 import './Projects.css';
+import {FaArrowLeft} from "react-icons/fa";
+import ProjectBannerNoLink from "./ProjectBannerNoLink.jsx";
 
 export default function Projects() {
   return (
       <div className="projects-page">
-        <h1>Projects</h1>
+          <h1>Projects</h1>
+
+          <div className="top-left-buttons">
+              <a
+                  href="/"
+                  className="single-top-left-button"
+              >
+                  <FaArrowLeft/>
+              </a>
+          </div>
+
+          <ProjectBannerNoLink
+              title="Journey On - ongoing"
+              description="A travel planner for your upcoming journeys. (Couldn't find any existing app in this category that I think is good enough, so I'm writing my own one now.)"
+              imageUrl="projects/journey_on/logo.webp"
+          />
 
           <ProjectBanner
               title="Capture of You"
@@ -29,24 +46,32 @@ export default function Projects() {
 
           <ProjectBanner
               title="WACC Compiler - group project"
-              description=""
+              description="A fully functional compiler for the WACC programming language. It translates formal language into executable and efficient assembly code."
               link="/#/projects/wacc"
               imageUrl="projects/wacc/logo.webp"
           />
 
-          <ProjectBanner
+          <ProjectBannerNoLink
               title="PintOS Operating System - group project"
-              description=""
-              link="/#/projects/pintos"
+              description="Safe and robust implementations in a lightweight OS that enables scheduling, system calls, user programs and memory managment."
               imageUrl="projects/pintos/logo.webp"
           />
 
-        <ProjectBanner
-            title="Japanese Vocabulary Flash Card"
-            description=""
-            link="/#/projects/jp-flash-card"
-            imageUrl="projects/jp_flash_card/logo.webp"
-        />
+          <div className="divider-with-text">
+              <span>Earlier Projects</span>
+          </div>
+
+          <ProjectBannerNoLink
+              title="Web Socket Chess Game - group project"
+              description="Multiplayer chess game over a LAN network. Chess logic and custom web socket functionalities 'joyfully' implemented in C."
+              imageUrl="projects/web_chess_game/logo.webp"
+          />
+
+          <ProjectBannerNoLink
+              title="Language Vocabulary Flash Card"
+              description="A simple program that helps refresh your memory of new vocabulary. Implemented the old-fashioned way using Java and Java Swing."
+              imageUrl="projects/jp_flash_card/logo.webp"
+          />
 
       </div>
   );

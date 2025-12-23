@@ -12,18 +12,48 @@
     gap: 1rem;
 }
 
-.top-button {
+.single-top-right-button {
     background-color: #1e1e1e;
     color: white;
-    padding: 0.6rem 1rem;
+    padding: 0.7rem 1.1rem;
     border-radius: 15px;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
     transition: background-color 0.2s ease, transform 0.1s ease;
+    display: flex;
+    align-items: center;
 }
 
-.top-button:hover {
+.single-top-right-button:hover {
+    color: white;
+    background-color: #333333;
+    transform: translateY(-2px); /* Add a subtle lift effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhance the shadow on hover */
+}
+
+.top-left-buttons {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.single-top-left-button {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 0.9rem 1rem;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    display: flex;
+    align-items: center;
+}
+
+.single-top-left-button:hover {
     color: white;
     background-color: #333333;
     transform: translateY(-2px); /* Add a subtle lift effect */

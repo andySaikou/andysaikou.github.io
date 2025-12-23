@@ -1,4 +1,5 @@
 import './Photos.css';
+import {FaArrowLeft} from "react-icons/fa";
 
 export default function Photos() {
     const photos = [
@@ -54,6 +55,16 @@ export default function Photos() {
 
     return (
         <div className="photos-page">
+
+            <div className="top-left-buttons">
+                <a
+                    href="/"
+                    className="single-top-left-button"
+                >
+                    <FaArrowLeft/>
+                </a>
+            </div>
+
             <h1>Photography</h1>
             <div className="photo-rows">
                 {photos.map((row, rowIndex) => (
@@ -64,7 +75,7 @@ export default function Photos() {
                         {row.map((photo, index) => (
                             <div className="photo-card" key={index}>
                                 <div className="photo-wrapper">
-                                    <img src={photo.src} alt={photo.caption} />
+                                    <img src={photo.src} alt={photo.caption}/>
                                 </div>
                                 <p className="photo-caption">{photo.caption}</p>
                             </div>

@@ -1,14 +1,14 @@
 import React from 'react';
 import './Projects.css';
 
-export default function ProjectBanner({ title, description, link, imageUrl }) {
+export default function ProjectBannerNoLink({ title, description, imageUrl }) {
     return (
-        <a href={link} className="project-banner">
+        <div className="project-banner-no-link">
             <img src={imageUrl} alt={title} className="project-banner-image" />
             <div className="project-banner-content">
                 <h2>{title}</h2>
                 <p>{description}</p>
             </div>
-        </a>
+        </div>
     );
 }

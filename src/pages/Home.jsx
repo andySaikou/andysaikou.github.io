@@ -11,7 +11,7 @@ export default function Home() {
                     href="https://www.linkedin.com/in/shaoyuan-guo-9a0875264/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="top-button"
+                    className="single-top-right-button"
                 >
                     <FaLinkedin />
                 </a>
@@ -19,7 +19,7 @@ export default function Home() {
                     href="https://github.com/andySaikou"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="top-button"
+                    className="single-top-right-button"
                 >
                     <FaGithub />
                 </a>
@@ -27,7 +27,7 @@ export default function Home() {
                     href="/resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="top-button"
+                    className="single-top-right-button"
                 >
                     <FaFilePdf />  CV
                 </a>

@@ -17,6 +17,13 @@ export default function Projects() {
               </a>
           </div>
 
+          <ProjectBanner
+              title="Pinch - ongoing"
+              description="A concise, minimalistic programming language based on dataflow that is represented by arrows. The interpreter for Pinch is under development."
+              link="/#/projects/pinch"
+              imageUrl="projects/pinch/logo.webp"
+          />
+
           <ProjectBannerNoLink
               title="Journey On - ongoing"
               description="A travel planner for your upcoming journeys. (Couldn't find any existing app in this category that I think is good enough, so I'm writing my own one now.)"
@@ -46,7 +53,7 @@ export default function Projects() {
 
           <ProjectBanner
               title="WACC Compiler - group project"
-              description="A fully functional compiler for the WACC programming language. It translates formal language into executable and efficient assembly code."
+              description="A fully functional compiler for the WACC programming language. It translates a formal language into executable and efficient assembly code."
               link="/#/projects/wacc"
               imageUrl="projects/wacc/logo.webp"
           />

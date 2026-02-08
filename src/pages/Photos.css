@@ -6,7 +6,8 @@
 
 .photo-row {
     display: grid;
-    margin-bottom: 20px; /* space between rows */
+    margin-bottom: 20px;
+    /* space between rows */
     justify-content: center;
 }
 

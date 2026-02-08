@@ -28,7 +28,7 @@ export default function SleepyCamp() {
             <div className="project-screenshot-section">
                 <img
                     src="/projects/sleepy_camp/app_preview.webp"
-                    alt="AI Document Assistant"
+                    alt="app_preview"
                     className="project-screenshots-image"
                 />
             </div>

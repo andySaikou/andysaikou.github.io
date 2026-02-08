@@ -20,7 +20,7 @@ export default function Photos() {
             { src: "/photos/DSCF0109.webp", caption: "Hastings, East Sussex" },
         ],
         [
-            { src: "/photos/DSCF0012.webp", caption: "South Haikou, Haihan" },
+            { src: "/photos/DSCF0012.webp", caption: "South Haikou, Hainan" },
             { src: "/photos/DSCF0027.webp", caption: "Richmond Park, London" },
             { src: "/photos/DSCF0320.webp", caption: "Saltburn, North Yorkshire" },
         ],

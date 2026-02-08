@@ -28,7 +28,7 @@ export default function CaptureOfYou() {
             <div className="project-screenshot-section">
                 <img
                     src="/projects/capture_of_you/app_preview.webp"
-                    alt="AI Document Assistant"
+                    alt="app_preview"
                     className="project-screenshots-image"
                 />
             </div>

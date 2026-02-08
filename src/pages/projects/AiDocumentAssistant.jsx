@@ -25,7 +25,7 @@ export default function AiDocumentAssistant() {
             <div className="project-screenshot-section">
                 <img
                     src="/projects/ai_document_assistant/screenshot.webp"
-                    alt="AI Document Assistant"
+                    alt="assistant page screenshot"
                     className="project-screenshots-image"
                 />
             </div>

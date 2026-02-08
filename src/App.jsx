@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Photos from './pages/Photos';
 import './App.css';
+import Pinch from './pages/projects/Pinch.jsx';
 import AiDocumentAssistant from "./pages/projects/AiDocumentAssistant.jsx";
 import CaptureOfYou from "./pages/projects/CaptureOfYou.jsx";
 import SleepyCamp from "./pages/projects/SleepyCamp.jsx";
@@ -30,6 +31,7 @@ function App() {
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/photography" element={<Photos />} />
 
+                    <Route path="/projects/pinch" element={<Pinch />} />
                     <Route path="/projects/ai-document-assistant" element={<AiDocumentAssistant />} />
                     <Route path="/projects/capture-of-you" element={<CaptureOfYou />} />
                     <Route path="/projects/sleepy-camp" element={<SleepyCamp />} />

@@ -36,8 +36,8 @@ export default function Home() {
             <h1>AndySaikou's Portfolio</h1>
             <p>
                 I am a third year Computer Science student at Imperial College London.
-                (Currently seeking an industrial placement for spring and summer 2026.)
-                Please check out my projects and photos! (*^_^*)
+                Please check out my projects and photos!
+                (*^_^*)
             </p>
 
             <div className="banner-grid">

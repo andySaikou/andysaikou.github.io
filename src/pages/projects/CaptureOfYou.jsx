@@ -1,14 +1,21 @@
 import './ProjectPage.css'
 import {FaArrowLeft, FaAppStoreIos} from "react-icons/fa";
+import {useNavigate} from "react-router-dom";
 
 export default function CaptureOfYou() {
+    const navigate = useNavigate();
+
     return (
         <div className="single-project-page">
 
             <div className="top-left-buttons">
                 <a
-                    href="/#/projects"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        navigate(-1);
+                    }}
                     className="single-top-left-button"
+                    style={{cursor: 'pointer'}}
                 >
                     <FaArrowLeft/>
                 </a>

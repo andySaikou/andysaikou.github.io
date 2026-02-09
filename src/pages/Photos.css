@@ -1,13 +1,16 @@
 .photos-page {
     overflow-y: auto;
     box-sizing: border-box;
+    padding: 15px clamp(0px, 1vw, 15px);
     font-family: sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .photo-row {
     display: grid;
     margin-bottom: 20px;
-    /* space between rows */
+    gap: clamp(20px, 3vw, 40px);
     justify-content: center;
 }
 
@@ -18,7 +21,7 @@
 
 /* 3-photo rows */
 .photo-row-3 {
-    grid-template-columns: repeat(3, 0.75fr);
+    grid-template-columns: repeat(3, 0.6fr);
 }
 
 .photo-card {
@@ -47,4 +50,19 @@
     font-size: 1rem;
     color: #555;
     text-align: center;
+}
+
+/* --- Mobile Responsive Layout --- */
+/* Show photos in photo-row vertically */
+@media (max-width: 700px) {
+    .photo-row-2,
+    .photo-row-3 {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .photo-wrapper {
+        max-width: 100%;
+        max-height: none;
+    }
 }

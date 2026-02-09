@@ -1,7 +1,9 @@
 .projects-page {
     overflow-y: auto;
     box-sizing: border-box;
-    padding: 0 40px; /* Horizonal padding */
+    padding: 15px clamp(0px, 1vw, 15px);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .project-banner {
@@ -17,6 +19,7 @@
     text-decoration: none; /* Remove underline from link */
     color: inherit; /* Inherit color for the text */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+    overflow: hidden;
 }
 
 .project-banner-no-link {
@@ -92,4 +95,46 @@
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+/* --- Mobile Responsive Layout --- */
+/* Change project banner to vertical layout */
+@media (max-width: 500px) {
+    .project-banner {
+        border: 1px solid #ccc;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px 15px;
+    }
+    .project-banner-no-link {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px 15px;
+    }
+    .project-banner:hover {
+        transform: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: inherit;
+    }
+
+    .project-banner-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .project-banner-content {
+        width: 100%;
+    }
+
+    .project-banner-content h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .project-banner-content p {
+        margin-right: 0;
+        font-size: 1rem;
+    }
 }

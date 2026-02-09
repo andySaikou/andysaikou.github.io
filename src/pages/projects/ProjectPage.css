@@ -1,9 +1,11 @@
 .single-project-page {
+    padding: 15px clamp(0px, 1vw, 15px);
     max-width: 900px;
     margin: 0 auto;
-    padding-top: 10px;
     line-height: 1.7;
     color: #eaeaea;
+    align-self: flex-start;
+    width: 100%;
 }
 
 .single-project-page h1 {
@@ -30,6 +32,8 @@
 
 .project-screenshots-image {
     max-width: 800px;
+    width: 100%;
+    height: auto;
     border: 1px solid #ddd;
     border-radius: 15px;
     overflow: hidden;
@@ -39,10 +43,10 @@
 .project-page-button {
     background-color: #1e1e1e;
     color: white;
-    padding: 0.6rem 0.9rem;
-        border-radius: 16px;
+    padding: clamp(0.5rem, 1.15vw, 0.7rem) clamp(0.8rem, 2vw, 1.2rem);
+    border-radius: clamp(10px, 2vw, 16px);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
     font-weight: 500;
     margin-bottom: 10px;
     transition: background-color 0.2s ease, transform 0.1s ease;
@@ -51,8 +55,8 @@
 }
 
 .project-page-button svg {
-    margin-right: 0.6rem;
-    font-size: 1.6rem;
+    margin-right: clamp(0.2rem, 2vw, 0.6rem);
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
 }
 
 .project-page-button:hover {

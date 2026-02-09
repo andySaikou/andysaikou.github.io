@@ -9,6 +9,7 @@ import AiDocumentAssistant from "./pages/projects/AiDocumentAssistant.jsx";
 import CaptureOfYou from "./pages/projects/CaptureOfYou.jsx";
 import SleepyCamp from "./pages/projects/SleepyCamp.jsx";
 import Wacc from "./pages/projects/Wacc.jsx";
+import ScrollToTop from "./ScrollToTop.js";
 
 // This component acts as the main router for your application.
 function App() {
@@ -16,6 +17,8 @@ function App() {
     return (
         // BrowserRouter handles the routing. The 'basename' is crucial for GitHub Pages.
         <HashRouter>
+            <ScrollToTop />
+
             <div className="app-container">
                 {/*
           The 'Routes' component wraps all of your individual routes.

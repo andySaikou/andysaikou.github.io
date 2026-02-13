@@ -22,6 +22,14 @@
     text-align: justify;
 }
 
+.code {
+    background-color: #f4f4f4;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #333;
+}
+
 .project-screenshot-section {
     display: flex;
     flex-wrap: wrap;

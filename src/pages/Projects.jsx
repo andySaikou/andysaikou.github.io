@@ -18,8 +18,8 @@ export default function Projects() {
           </div>
 
           <ProjectBanner
-              title="Pinch - ongoing"
-              description="A concise, minimalistic programming language based on dataflow that is represented by arrows. The interpreter for Pinch is under development."
+              title="Pinch"
+              description="A concise, minimalistic programming language based on data flow represented by arrows. Pinch programs run on an interpreter built with C."
               link="/#/projects/pinch"
               imageUrl="projects/pinch/logo.webp"
           />

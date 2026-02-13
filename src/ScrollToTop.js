@@ -7,7 +7,7 @@ export default function ScrollToTop() {
 
     useEffect(() => {
         // Reset scroll on single-project-pages
-        if (pathname.includes("/projects/") || navType === "PUSH") {
+        if (pathname.includes("/projects/") || pathname.includes("/photography") || navType === "PUSH") {
             window.scrollTo(0, 0);
         }
     }, [pathname, navType]);
